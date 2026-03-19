@@ -15,21 +15,32 @@
   <body>
     <div class="App">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Johannesburg</h1>
-          <p>
-            Thursday 15:40, overcast clouds
-            <br />
-            Humidity: 62%, Wind: 1.03km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Johannesburg</h1>
+            <p class="weather-app-details">
+              Thursday 15:40, overcast clouds
+              <br />
+              Humidity: <strong>62%</strong> , Wind: <strong>1.03km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature-value">24</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>⛅ 24°C</div>
       </main>
 
       <footer>
